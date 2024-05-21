@@ -107,6 +107,13 @@ p{
     text-align: center;
     margin-bottom: 2rem;
   }
+.underline {
+    width: 5rem;
+    height: 0.25rem;
+    background: var(--clr-gold);
+    margin-left: auto;
+    margin-right: auto;
+}
 .section-center{
     width: 90vw;
     margin: 0 auto;
