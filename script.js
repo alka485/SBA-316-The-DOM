@@ -83,13 +83,14 @@ const menu = [
       },
 ]
 
-const sectionCenter = document.querySelector('.section-center');
+const sectionCenter = document.getElementById('section-center');
 //console.log(sectionCenter);
 
 const filterBtns = document.querySelectorAll('.filter-btn');
 //load items
 window.addEventListener("DOMContentLoaded" , function () {
     displayMenuItems(menu);
+    displayMenuButtons();
 });
 //filter items
 filterBtns.forEach(function(btn){
