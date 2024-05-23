@@ -90,7 +90,6 @@ const filterBtns = document.querySelectorAll('.filter-btn');
 //load items
 window.addEventListener("DOMContentLoaded" , function () {
     displayMenuItems(menu);
-    displayMenuButtons();
 });
 //filter items
 filterBtns.forEach(function(btn){
@@ -132,3 +131,46 @@ function displayMenuItems(menuItems){
     //console.log(displayMenu);
     sectionCenter.innerHTML = displayMenu;
 }
+
+const loginlink = document.getElementById('login');
+//console.log(loginlink);
+
+loginlink.addEventListener("click" ,(e)=>{
+  e.preventDefault();
+  console.log("clicked");
+  window.open("../login.html")
+  //Create a form dynamically
+ var form = document.createElement("form");
+ form.setAttribute("method","post");
+ form.setAttribute("action","submit.php");
+
+ //Create an input element for username
+ let userName = document.createElement("input");
+ userName.setAttribute("type", "text");
+ userName.setAttribute("name", "userName");
+ userName.setAttribute("placeholder","userName");
+
+ //Create an input element for password
+ let PWD = document.createElement("input");
+ PWD.setAttribute("type", "password");
+ PWD.setAttribute("placeholder","Password");
+
+
+ 
+//Append username to the form
+ form.appendChild(userName);
+
+ //Append password to the form
+ form.appendChild(PWD);
+
+ document.getElementsByTagName("body")[0].appendChild(form)
+
+ 
+
+})
+
+
+
+
+
+
