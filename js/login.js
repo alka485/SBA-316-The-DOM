@@ -1,49 +1,14 @@
-//console.log("login");
-//Login Page
-// const loginForm = document.getElementById('login-form');
-// console.log(loginForm);
-// const loginButton = document.getElementById('login-btn');
-//console.log(loginButton);
+console.log("hello");
 
-// loginButton.addEventListener("click" , (e) => {
-//     e.preventDefault();
-//     //console.log("clicked");
-//     const userName = loginForm.elements['username'];
-//     //console.log(userName);
-//     const password = loginForm.elements['password'];
-//     console.log(password);
+//Create a back button dynamically
+const backButton = document.createElement('button');
+backButton.textContent = 'Back';
+backButton.classList.add('btn');
 
+//Add an event listener to the back button
+backButton.addEventListener('click', function(){
+    window.history.back();
+});
 
-    
-//     //console.log(loginForm);
-// })
-
-//Create a form dynamically
-var form = document.createElement("form");
-form.setAttribute("method","post");
-form.setAttribute("action","submit.php");
-
-//Create an input element for username
-let userName = document.createElement("input");
-userName.setAttribute("type", "text");
-userName.setAttribute("name", "userName");
-userName.setAttribute("placeholder","userName");
-
-//Create an input element for password
-let PWD = document.createElement("input");
-PWD.setAttribute("type", "password");
-PWD.setAttribute("placeholder","Password");
-
-
-
-//Append username to the form
-form.appendChild(userName);
-
-//Append password to the form
-form.appendChild(PWD);
-
-document.getElementsByTagName("body")[0].appendChild(form)
-
-
-
-
+//Append the back button to the login container
+document.querySelector('.login-container').appendChild(backButton);

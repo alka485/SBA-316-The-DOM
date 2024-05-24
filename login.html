@@ -16,13 +16,14 @@
             <div class="login-container">
                 <form action="" id="login-form">
                     <label for="userName">Username:</label>
-                    <input type="text" name="username" id="username-field" class="username" placeholder="Username">
+                    <input type="text" name="username" id="username-field" class="username" placeholder="Username" required>
     
                     <label for="password">Password:</label>
-                    <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+                    <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password" minlength="6" maxlength="14">
     
                     <button class="btn" id="login-btn">Login</button>
                 </form>
+                <!-- <button id="backButton" class="btn">Back</button> -->
             </div>
          </div>   
         </section>
