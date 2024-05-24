@@ -139,34 +139,6 @@ loginlink.addEventListener("click" ,(e)=>{
   e.preventDefault();
   console.log("clicked");
   window.location.pathname = "../login.html"
-  //Create a form dynamically
-//  var form = document.createElement("form");
-//  form.setAttribute("method","post");
-//  form.setAttribute("action","submit.php");
-
- //Create an input element for username
-//  let userName = document.createElement("input");
-//  userName.setAttribute("type", "text");
-//  userName.setAttribute("name", "userName");
-//  userName.setAttribute("placeholder","userName");
-
- //Create an input element for password
-//  let PWD = document.createElement("input");
-//  PWD.setAttribute("type", "password");
-//  PWD.setAttribute("placeholder","Password");
-
-
- 
-//Append username to the form
-//  form.appendChild(userName);
-
- //Append password to the form
-//  form.appendChild(PWD);
-
-//  document.getElementsByTagName("body")[0].appendChild(form)
-
- 
-
 })
 
 
