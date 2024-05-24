@@ -154,11 +154,13 @@ p{
     max-width: 1170px;
     display: grid;
     gap: 1rem 2rem;
+    grid-template-columns: repeat(2, 1fr); /*Two Columns */
     justify-items: center;
 }
 
 .menu-item {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 1rem 2rem;
     max-width: 25rem;
 }
@@ -166,6 +168,7 @@ p{
 .photo{
     object-fit: cover;
     height: 200px;
+    width: 100%;
     border: 0.25rem solid var(--clr-gold);
     border-radius: var(--radius);
 }
@@ -240,8 +243,15 @@ main{
     cursor: pointer;
     transition: var(--transition);
     font-size: 1rem;
+    margin-bottom: 1rem;
 }
 
 .login-container button:hover {
     background: var(--clr-primary-4);
+}
+
+.back-btn {
+    padding: 0.5rem;
+    background: var(--clr-primary-5);
+
 }
