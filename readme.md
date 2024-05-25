@@ -17,7 +17,7 @@ working on document fragment was tough because I am not used to document fragmen
 I think I will work more on images and it's info I am unable to get the alignment which I want
 
 ### Github link 
-[!](https://github.com/alka485/SBA-316-The-DOM.git)
+[https://github.com/alka485/SBA-316-The-DOM.git](https://github.com/alka485/SBA-316-The-DOM.git)
 
 ### Live Url
-[!](https://alka485.github.io/SBA-316-The-DOM/)
+[https://alka485.github.io/SBA-316-The-DOM/](https://alka485.github.io/SBA-316-The-DOM/)
