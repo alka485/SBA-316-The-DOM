@@ -281,7 +281,7 @@ main{
 
 /* SignUp Page */
 #form-container{
-    /* display: none; */
+    display: none;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -306,9 +306,21 @@ main{
 }
 
 #form-container .btn {
-    align-self: flex-end;
     margin-top: 1rem;
+    background: var(--clr-primary-5);
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1rem;
+    margin-bottom:1rem ;
 }
+
+#form-container .btn:hover{
+    background: var(--clr-primary-4);
+}
+
+
 
 
 
