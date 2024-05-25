@@ -87,6 +87,15 @@ const sectionCenter = document.getElementById('section-center');
 //console.log(sectionCenter);
 
 const filterBtns = document.querySelectorAll('.filter-btn');
+//prevbtn nextbtn
+
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+let currentHighlighted = null;
+
+//console.log(nextBtn);
+//console.log(prevBtn);
+
 //load items
 window.addEventListener("DOMContentLoaded" , function () {
     displayMenuItems(menu);
@@ -145,15 +154,6 @@ loginlink.addEventListener("click" ,(e)=>{
   //console.log("clicked");
   window.location.pathname = "../login.html"
 })
-
-//prevbtn nextbtn
-
-const prevBtn = document.getElementById('prev-btn');
-const nextBtn = document.getElementById('next-btn');
-let currentHighlighted = null;
-
-//console.log(nextBtn);
-//console.log(prevBtn);
 
 //Load items
 window.addEventListener("DOMContentLoaded", function () {

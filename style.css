@@ -278,3 +278,37 @@ main{
     border: 2px solid var(--clr-primary-5);
     box-shadow: var(--dark-shadow);
 }
+
+/* SignUp Page */
+#form-container{
+    /* display: none; */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--clr-white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    z-index:10;
+}
+
+#form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-container input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid var(--clr-grey-3);
+    border-radius: var(--radius);
+}
+
+#form-container .btn {
+    align-self: flex-end;
+    margin-top: 1rem;
+}
+
+
+
