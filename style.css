@@ -250,10 +250,29 @@ main{
     background: var(--clr-primary-4);
 }
 
-.back-btn {
-    padding: 0.5rem;
-    background: var(--clr-primary-5);
-
+/* Previous button and Next Button */
+#navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+#prev-btn, #next-btn {
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--clr-black);
+    padding: 0.375rem 0.75rem;
+    letter-spacing: var(--spacing);
+    font-size: 0.875rem;
+    border: 2px solid var(--clr-black);
+    cursor: pointer;
+    box-shadow: var(--light-shadow);
+    border-radius: var(--radius);
+    margin: 0 0.5rem;
+    transition: var(--transition);
+}
+#prev-btn:hover,#next-btn:hover{
+    color: var(--clr-white);
+    background: var(--clr-black);
 }
 .highlight {
     border: 2px solid var(--clr-primary-5);
