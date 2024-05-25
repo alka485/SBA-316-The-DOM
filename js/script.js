@@ -110,6 +110,11 @@ filterBtns.forEach(function(btn){
           else{
             displayMenuItems(menuCategory)
           }
+          //Reset highlighting after filtering
+          currentHighlighted = sectionCenter.firstElementChild;
+          if(currentHighlighted) {
+            currentHighlighted.classList.add('highlight')
+          }
     })
 })
 
@@ -137,9 +142,28 @@ const loginlink = document.getElementById('login');
 
 loginlink.addEventListener("click" ,(e)=>{
   e.preventDefault();
-  console.log("clicked");
+  //console.log("clicked");
   window.location.pathname = "../login.html"
 })
+
+//prevbtn nextbtn
+
+const prevBtn = document.getElementById('prev-btn');
+const nextBtn = document.getElementById('next-btn');
+let currentHighlighted = null;
+
+//console.log(nextBtn);
+//console.log(prevBtn);
+
+//Load items
+window.addEventListener("DOMContentLoaded", function () {
+  displayMenuItems(menu);
+  currentHighlighted=sectionCenter.firstElementChild; //Start with the first item
+  if(currentHighlighted) {
+    currentHighlighted.classList.add('highlight');
+  }
+})
+
 
 
 

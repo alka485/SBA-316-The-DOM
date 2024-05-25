@@ -255,3 +255,7 @@ main{
     background: var(--clr-primary-5);
 
 }
+.highlight {
+    border: 2px solid var(--clr-primary-5);
+    box-shadow: var(--dark-shadow);
+}
